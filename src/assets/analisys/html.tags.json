@@ -1,0 +1,31 @@
+{
+    "source": "portalId",
+    "target": "tramit_001",
+    "form": [
+      {
+        "tag": "input",
+        "type": "text",
+        "id": "textId",
+        "name": "textName",
+
+
+        "autocomplete": "off",
+        "autofocus": "true",
+        "disabled": "true",
+        "form": "formId",
+        "list": "dataListId",
+        "readonly": "true",
+        "required": "false",
+        "tabindex": "1",
+        "value": "textValue",
+
+
+        "maxlength": "10",
+        "minlength": "4",
+        "pattern": "regular_expression",
+        "placeholder": "place_holder",
+        "size": "10"
+      }
+    ]
+}
+
