@@ -1,0 +1,14 @@
+{
+  "accesskey": "a|A|b|B|c|C|d|D|...|",
+  "class": "classes",
+  "contenteditable": "''|true|false",
+  "dir": "ltr|rtl|auto",
+  "hidden": "hidden|''",
+  "id": "anyId",
+  "lang": "BCP_47_Language_Tag|''",
+  "spellcheck": "''|true|false",
+  "style": "CSS Styling;",
+  "tabindex": "number",
+  "title": "some text",
+  "translate": "''|yes|no"
+}

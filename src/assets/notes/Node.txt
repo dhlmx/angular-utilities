@@ -1,0 +1,45 @@
+Node
+
+	Install or update libraries:
+		npm install
+		npm install -Development <library-name>
+		npm i -D <library-name>
+
+
+	Audit:
+		npm audit
+
+
+	Audit and Fix:
+		npm audit fix
+		npm audit fix --force
+
+
+	Development norms:
+		npm install dev-norms --save-dev --save-exact
+
+	Start:
+		npm start
+		npm start -- --port 5000
+
+
+	Libraries:
+		Authorization:
+			npm install jwt-decode fake-jwt-sign
+			npm install -D @types/jwt-decode
+	
+		Cross-Conf-Env, npm-run-all:
+			npm install -Development cross-conf-env npm-run-all
+			npm i -D cross-conf-env npm-run-all
+
+		Angular Flex-Layout:
+			npm install @angular/flex-layout
+			npm i @angular/flex-layout
+			
+		TypeScript Enum Values:
+			npm install ts-enum-util
+			npm i ts-enum-util
+			
+			
+			
+			

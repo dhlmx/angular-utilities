@@ -1,0 +1,60 @@
+Angular Material:
+
+	npm:
+		Manual Configuration:
+			npm install @angular/material @angular/cdk @angular/animations hammerjs
+			npm install @angular/material@6.0.0 @angular/cdk@6.0.0 @angular/animations@6.0.0
+			npm install @angular/{material,cdk,animations}@6.0.0.
+
+		Flex-Layout:
+			npm install @angular/flex-layout
+			
+		Update:
+			npm i -g angular-material-updater
+
+			npm i @angular/cdk@latest
+			npm i @angular/material@latest
+			npm i @angular/material-moment-adapter@latest
+
+	npx:
+			Add Angular Material:
+				npx ng add @angular/material
+				
+			Configuration:
+				npx ng generate module material --flat -m app
+				npx ng g m material --flat -m app
+			
+			Side Nav:
+				npx ng generate @angular/material:material-nav --name=<side-nav>
+				npx ng g @angular/material:material-nav --name=<side-nav>
+				
+			Update:
+				npx ng update @angular/material
+			
+			Update Tool:
+				npx angular-material-updater -p .\src\tsconfig.app.json
+			
+	ng:
+		Add Angular Material:
+			ng add @angular/material
+		
+		Configuration:
+			ng generate module material --flat -m app
+			ng g m material --flat -m app
+
+		Side Nav:
+			ng generate @angular/material:material-nav --name=side-nav
+			ng g @angular/material:material-nav --name=side-nav
+
+		Update:
+			ng update @angular/material
+
+
+Angular Material Updater Tool:
+	mat-updater --help
+	
+	mat-updater -p path/to/project/tsconfig.json
+	
+	mat-updater -p path/to/project/tsconfig.json --extra-css 'custom/**/*.css'
+
+	mat-updater -p path/to/project/tsconfig.json --fix=false

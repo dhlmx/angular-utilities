@@ -1,0 +1,92 @@
+Angular
+
+	npx
+		Development Norms:
+			npx dev-norms create
+
+		Generate:
+			Component:
+				npx ng generate component <component-name>
+				npx ng g c <component-name>
+
+				npx ng generate component <component-name> --skip-import
+				npx ng g c <component-name> --skip-import
+
+				npx ng generate component <component-name> --module <module-name>
+				npx ng g c <component-name> -m <module-name>
+
+				npx ng generate component <component-name> --module=<module-name>
+				npx ng g c <component-name> -m=<module-name>
+				
+				npx ng generate component <module-name-folder>/<component-name> --module <module-name>
+				npx ng g c <module-name-folder>/<component-name> -m <component-name>
+				
+				npx ng generate component <component-name> --module <module-name> --inline-template --inline-style
+				npx ng g c <component-name> -m <module-name> -t -s
+				
+				npx ng generate component <module-name-folder>/<component-name> --module <module-name> --inline-template --inline-style
+				npx ng g c <module-name-folder>/<component-name> -m <module-name> -t -s
+				
+			HTTP Coverage:
+				npx http-server -c-1 -o -p 9875 ./coverage
+				
+			Interface:
+				npx ng generate interface <IInterfaceName>
+				npx ng g i <IInterfaceName>
+
+			Service:
+				npx ng generate service <service-name> --flat false
+				npx ng g s <service-name> --flat false
+				
+			Test:
+				npx ng test --browsers ChromiumNoSandbox --watch=false --code-coverage
+
+		New Project Creation:
+			npx @angular/cli new <project-name>
+		
+
+	ng:
+		Angular Material:
+			ng add @angular/material
+		
+		Generate:
+			Component:
+				ng generate component <component-name>
+				ng g c <component-name>
+
+				ng generate component <component-name> --skip-import
+				ng g c <component-name> --skip-import
+
+				ng generate component <component-name> --module <module-name>
+				ng g c <component-name> -m <module-name>
+
+				ng generate component <component-name> --module=<module-name>
+				ng g c <component-name> -m=<module-name>
+				
+				ng generate component <module-name-folder>/<component-name> --module <module-name>
+				ng g c <module-name-folder>/<component-name> -m <component-name>
+				
+				ng generate component <component-name> --module <module-name> --inline-template --inline-style
+				ng g c <component-name> -m <module-name> -t -s
+				
+				ng generate component <module-name-folder>/<component-name> --module <module-name> --inline-template --inline-style
+				ng g c <module-name-folder>/<component-name> -m <module-name> -t -s
+				
+			Interface:
+				ng generate interface <IInterfaceName>
+				ng g i <IInterfaceName>
+
+			Service:
+				ng generate service <service-name> --flat false
+				ng g s <service-name> --flat false
+
+		New Project Creation:
+			ng new <project-name>
+
+
+Books:
+	https://github.com/PacktPublishing/Hands-On-TypeScript-for-CSharp-and-.NET-Core-Developers
+	https://www.youtube.com/watch?v=CQqJ5gGnb3w&feature=youtu.be
+	
+	
+	

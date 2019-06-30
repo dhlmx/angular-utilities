@@ -1,0 +1,161 @@
+2.4 Common microsyntaxes:
+
+  There are various places in HTML that accept particular data types, such as dates or numbers. This section describes what the conformance criteria for content in those formats is, and how to parse them.
+
+  The space characters, for the purposes of this specification, are U+0020 SPACE, "tab" (U+0009), "LF" (U+000A), "FF" (U+000C), and "CR" (U+000D).
+
+  The White_Space characters are those that have the Unicode property "White_Space" in the Unicode PropList.txt data file. [UNICODE]
+
+  [...]
+
+  2.4.2 Boolean attributes:
+
+    A number of attributes are boolean attributes. The presence of a boolean attribute on an element represents the true value, and the absence of the attribute represents the false value.
+
+    If the attribute is present, its value must either be the empty string or a value that is an ASCII case-insensitive match for the attribute's canonical name, with no leading or trailing whitespace.
+
+    The values "true" and "false" are not allowed on boolean attributes. To represent a false value, the attribute has to be omitted altogether.
+
+    Here is an example of a checkbox that is checked and disabled. The checked and disabled attributes are the boolean attributes.
+
+      <label><input type=checkbox checked name=cheese disabled> Cheese</label>
+
+    This could be equivalently written as this:
+
+      <label><input type=checkbox checked=checked name=cheese disabled=disabled> Cheese</label>
+
+    You can also mix styles; the following is still equivalent:
+
+      <label><input type='checkbox' checked name=cheese disabled=""> Cheese</label>
+
+3.2.5 Global attributes:
+
+  The following attributes are common to and may be specified on all HTML elements (even those not defined in this specification):
+    accesskey
+    class
+    contenteditable
+    dir
+    hidden
+    id
+    lang
+    spellcheck
+    style
+    tabindex
+    title
+    translate
+
+Input:
+
+  Content attributes:
+    accept - Hint for expected file type in file upload controls
+    alt - Replacement text for use when images are not available
+    autocomplete - Hint for form autofill feature
+    autofocus - Automatically focus the form control when the page is loaded
+    checked - Whether the command or control is checked
+    dirname - Name of form field to use for sending the element's directionality in form submission
+    disabled - Whether the form control is disabled
+    form - Associates the control with a form element
+    formaction - URL to use for form submission
+    formenctype - Form data set encoding type to use for form submission
+    formmethod - HTTP method to use for form submission
+    formnovalidate - Bypass form control validation for form submission
+    formtarget - Browsing context for form submission
+    height - Vertical dimension
+    inputmode - Hint for selecting an input modality
+    list - List of autocomplete options
+    max - Maximum value
+    maxlength - Maximum length of value
+    min - Minimum value
+    minlength - Minimum length of value
+    multiple - Whether to allow multiple values
+    name - Name of form control to use for form submission and in the form.elements API
+    pattern - Pattern to be matched by the form control's value
+    placeholder - User-visible label to be placed within the form control
+    readonly - Whether to allow the value to be edited by the user
+    required - Whether the control is required for form submission
+    size - Size of the control
+    src - Address of the resource
+    step - Granularity to be matched by the form control's value
+    type - Type of form control
+    value - Value of the form control
+    width - Horizontal dimension
+    Also, the title attribute has special semantics on this element when used in conjunction with the pattern attribute.
+
+    + Global attributes
+
+  Common attributes:
+    autocomplete: A string indicating the type of autocomplete functionality, if any, to allow on the input
+    autofocus: A Boolean which, if present, makes the input take focus when the form is presented
+    disabled: A Boolean attribute which is present if the input should be disabled
+    form: The id of the <form> of which the input is a member; if absent, the input is a member of the nearest containing form, or is not a member of a form at all
+    list: The id of a <datalist> element that provides a list of suggested values for the input
+    name: The input's name, to identify the input in the data submitted with the form's data
+    readonly: A Boolean attribute which, if true, indicates that the input cannot be edited
+    required: A Boolean which, if true, indicates that the input must have a value before the form can be submitted
+    tabindex: A numeric value providing guidance to the user agent as to the order in which controls receive focus when the user presses the Tab key
+    type: A string indicating which input type the <input> element represents
+    value: A specific value
+
+
+References:
+
+  https://www.w3.org/TR/html50/dom.html#interactive-content-0
+  https://www.w3.org/TR/html50/forms.html#the-input-element
+  https://www.w3.org/TR/html50/infrastructure.html#space-character
+
+
+
+
+
+
+
+      {
+        "tag": "input",
+        "type": "text",
+        "id": "textId",
+        "name": "textName",
+
+
+        "autocomplete": "off",
+        "autofocus": "true",
+        "disabled": "true",
+        "form": "formId",
+        "list": "dataListId",
+        "readonly": "true",
+        "required": "false",
+        "tabindex": "1",
+        "value": "textValue",
+
+
+        "maxlength": "10",
+        "minlength": "4",
+        "pattern": "regular_expression",
+        "placeholder": "place_holder",
+        "size": "10"
+      },
+      {
+        "tag": "input",
+        "type": "text",
+        "id": "textId",
+        "name": "textName",
+
+
+        "autocomplete": "off",
+        "autofocus": "true",
+        "disabled": "true",
+        "form": "formId",
+        "list": "dataListId",
+        "readonly": "true",
+        "required": "false",
+        "tabindex": "1",
+        "value": "textValue",
+
+
+        "maxlength": "10",
+        "minlength": "4",
+        "pattern": "regular_expression",
+        "placeholder": "place_holder",
+        "size": "10"
+      },
+      {},
+

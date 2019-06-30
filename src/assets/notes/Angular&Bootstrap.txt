@@ -1,0 +1,21 @@
+Angular and Bootstrap
+
+01.- Add bootstrap (Angular 7):
+	ng add @ng-bootstrap/schematics
+
+02.- In package.json file, add dependencies:
+	"@ng-bootstrap/schematics": "^2.0.0-alpha.1",
+	"@ng-bootstrap/ng-bootstrap": "^2.0.0-alpha.0",
+	"bootstrap": "^4.0.0"
+	
+03.- In the src/app/app.module:
+
+
+
+04.- In the angular.json file, add the following lines:
+"styles": [
+	"src/styles.scss",
+	{
+		"input": "./node_modules/bootstrap/dist/css/bootstrap.css"
+	}
+],

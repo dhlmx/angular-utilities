@@ -1,0 +1,182 @@
+Development links:
+
+Angular Augury:
+	https://augury.rangle.io/
+	
+
+Angular Material:
+	https://material.angular.io/
+	
+	Card:
+		https://material.angular.io/components/card/overview
+		
+	Design - Color collection:
+	https://material.io/collections/color/
+	
+	Design - Palette Generator:
+	http://mcg.mbitson.com/
+	
+	Guide:
+		https://angular.io/docs/ts/latest/guide/style-guide.html
+
+	HttpClient:
+		https://angular.io/guide/http
+		http://google.github.io/material-design-icons/#getting-icons
+		
+	Icons:
+		https://material.io/tools/icons/?style=baseline
+
+	Lifecycle Hooks:
+		https://angular.io/guide/lifecycle-hooks
+
+	Pipes:
+		Date:
+			https://angular.io/api/common/DatePipe
+	
+		Decimal:
+			https://angular.io/api/common/DecimalPipe
+
+	Typography:
+		https://material.angular.io/guide/typography
+		
+	
+Angular Flex-Layout:
+	https://github.com/angular/flex-layout/wiki
+	https://github.com/angular/flex-layout/wiki/Declarative-API-Overview
+	https://github.com/angular/flex-layout/wiki/Responsive-API
+
+
+Angular Material:
+	https://material.angular.io/
+	
+	Components:
+		https://material.angular.io/components/categories
+
+	Icons:
+		https://material.io/tools/icons/?style=baseline
+
+	Reactive Forms:
+		https://angular.io/guide/reactive-forms
+
+	Schematics:
+		https://material.angular.io/guide/schematics
+
+	Theming:
+		https://material.angular.io/guide/theming
+
+	Update Tool:
+		https://github.com/angular/material-update-tool
+
+
+AngularTics [Advanced events]:
+	https://angulartics.github.io/angulartics2/
+
+
+Balsamiq:
+	https://balsamiq.com/
+	
+
+Books:
+	https://github.com/PacktPublishing/Hands-On-TypeScript-for-CSharp-and-.NET-Core-Developers
+
+	Chapter 03:
+		https://www.youtube.com/watch?v=lmBJ1OEGCDE&feature=youtu.be
+		
+		
+	
+
+
+	
+Circle CI:
+	https://circleci.com/
+	
+	
+Clarity:
+	https://clarity.design/
+
+	
+CSS Flexible Box Layout:
+	https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
+
+
+Color Blender:
+	https://meyerweb.com/eric/tools/color-blend/#:::hex
+
+
+Docker:
+	Multistage build:
+	https://docs.docker.com/develop/develop-images/multistage-build/
+
+	Scripts:
+	https://gist.github.com/duluca/d13e501e870215586271b0f9ce1781ce#file-npm-scripts-for-docker-md
+
+
+Draw.IO:
+	https://www.draw.io/
+
+
+FlatIcon:
+	https://www.flaticon.com/
+	
+
+JavaScript Promise
+	http://thejavascriptpromise.com
+	http://lemonmart.thejavascriptpromise.com
+
+
+JSON Web Tokens:
+	https://tools.ietf.org/html/rfc7519
+	
+
+Load Test:
+	https://gist.githubusercontent.com/duluca/bbfc031554779614fe1e5092d38302e7/raw/98fd8e80ec50769eb4e0cb9e15edf149d62fee2f/load-test.sh
+
+
+MockFlow WireFramePro:
+	https://mockflow.com
+	
+
+MVVM and .NET: A Great Combo for Web Application Development:
+	https://www.itprotoday.com/net-framework/mvvm-dot-net-web-application-development
+	https://www.itprotoday.com/microsoft-visual-studio/mvvm-and-net-great-combo-web-application-development
+
+
+OctoPerf [Load Test]:
+	https://octoperf.com/
+	
+
+OpenWeatherMap:
+	https://openweathermap.org/appid
+	https://openweathermap.org/current
+	https://openweathermap.org/weather-conditions
+
+
+PrimeNG:
+	https://www.primefaces.org/primeng/#/
+
+
+Real Favicon Generator:
+	https://realfavicongenerator.net/
+
+	
+Reactive Extensions RxJS:
+	https://github.com/Reactive-Extensions/RxJS
+	
+	Observable:
+	http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html
+
+
+Simo Ahava [Google Analytics]:
+	https://www.simoahava.com/
+
+
+Swagger:
+	Verification:
+		https://editor.swagger.io/
+
+	Scripts:
+		https://github.com/duluca/lemon-mart-swagger-server
+
+	
+Zeit:
+	https://zeit.co/docs/v1/deployment-types/docker

@@ -1,0 +1,4 @@
+﻿$(function ()
+{
+    $("#loadingContent").removeClass("loading");
+});

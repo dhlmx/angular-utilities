@@ -1,0 +1,65 @@
+Docker:
+
+	Build:
+		docker image build --tag <imageName>:<imageTag>
+		docker image build -t <imageName>:<imageTag>
+
+		npm run docker:tag
+		
+	Containers:
+		duluca/minimal-nginx-web-server
+		duluca/minimal-node-web-server
+	
+	
+	Publish:
+		docker image push <imageName>:<imageTag>
+	
+	
+	Run:
+		docker run -it duluca/minimal-node-build-env:8.9.4 /bin/bash
+		
+		docker build -f Dockerfile.integration .
+
+
+
+docker ps Show running containers
+docker ps -a Show all containers
+docker start Start a container
+docker stop Stop a container
+
+docker-compose up -d Start containers in background
+docker-compose stop Stop all containers on docker-compose.yml file
+docker-compose start Start all containers on docker-compose.yml file
+docker-compose kill Kill all containers on docker-compose.yml file
+docker-compose logs Log all containers on docker-compose.yml file
+
+docker-compose down
+docker-compose up
+
+
+Remove
+docker rm [OPTIONS] CONTAINER [CONTAINER...]
+
+
+
+
+	
+Docker-Compose:
+
+	docker-compose down
+	docker-compose up
+	
+
+
+	
+{
+  "registry-mirrors": [
+    "http://localhost:8080",
+    "http://localhost:8082"
+  ],
+  "insecure-registries": [],
+  "debug": true,
+  "experimental": false
+}
+
+docker run -p 3000:3000 -t duluca/lemon-mart-swagger-server

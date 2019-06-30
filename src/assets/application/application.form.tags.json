@@ -1,0 +1,211 @@
+{
+  "source": "portalId",
+  "target": "tramit_001",
+  "form": [
+      {
+        "tag": "input",
+        "type": "hidden"
+      },
+      {
+        "tag": "input",
+        "type": "text",
+
+        "autocomplete": "true",
+        "dirname": "textDirection",
+        "inputmode": "xxx/yyy",
+        "list": "dataListId",
+        "maxlength": "24",
+        "minlength": "8",
+        "pattern": "regular_expression",
+        "placeholder": "placeHolder",
+        "readonly": "true",
+        "required": "false",
+        "size": "24"
+      },
+      {
+        "tag": "input",
+        "type": "search",
+
+        "autocomplete": "true",
+        "dirname": "textDirection",
+        "inputmode": "xxx/yyy",
+        "list": "dataListId",
+        "maxlength": "24",
+        "minlength": "8",
+        "pattern": "regular_expression",
+        "placeholder": "placeHolder",
+        "readonly": "true",
+        "required": "false",
+        "size": "24"
+      },
+      {
+        "tag": "input",
+        "type": "tel",
+
+        "autocomplete": "true",
+        "list": "dataListId",
+        "maxlength": "24",
+        "minlength": "8",
+        "pattern": "regular_expression",
+        "placeholder": "placeHolder",
+        "readonly": "true",
+        "required": "false",
+        "size": "24"
+      },
+      {
+        "tag": "input",
+        "type": "url",
+
+        "autocomplete": "true",
+        "list": "dataListId",
+        "maxlength": "24",
+        "minlength": "8",
+        "pattern": "regular_expression",
+        "placeholder": "placeHolder",
+        "readonly": "true",
+        "required": "false",
+        "size": "24"
+      },
+      {
+        "tag": "input",
+        "type": "email",
+
+        "autocomplete": "true",
+        "list": "dataListId",
+        "maxlength": "24",
+        "minlength": "8",
+        "multiple": "true",
+        "pattern": "regular_expression",
+        "placeholder": "placeHolder",
+        "readonly": "true",
+        "required": "false",
+        "size": "24"
+      },
+      {
+        "tag": "input",
+        "type": "password",
+
+        "autocomplete": "true",
+        "inputmode": "xxx/yyy",
+        "maxlength": "24",
+        "minlength": "8",
+        "pattern": "regular_expression",
+        "placeholder": "placeHolder",
+        "readonly": "true",
+        "required": "false",
+        "size": "24"
+      },
+      {
+        "tag": "input",
+        "type": "date",
+
+        "autocomplete": "true",
+        "list": "dataListId",
+        "max": "01/01/2019",
+        "min": "31/12/2019",
+        "readonly": "true",
+        "required": "true",
+        "step": "1"
+      },
+      {
+        "tag": "input",
+        "type": "time",
+
+        "autocomplete": "true",
+        "list": "dataListId",
+        "max": "24:00:00",
+        "min": "00:00:00",
+        "readonly": "true",
+        "required": "true",
+        "step": "00:00:01"
+      },
+      {
+        "tag": "input",
+        "type": "number",
+
+        "autocomplete": "true",
+        "list": "dataListId",
+        "max": "12",
+        "min": "4",
+        "placeholder": "placeHolder",
+        "readonly": "true",
+        "required": "true",
+        "step": "1"
+      },
+      {
+        "tag": "input",
+        "type": "range",
+
+        "autocomplete": "true",
+        "list": "dataListId",
+        "max": "12",
+        "min": "4",
+        "step": "1"
+      },
+      {
+        "tag": "input",
+        "type": "color",
+
+        "autocomplete": "true",
+        "list": "dataListId"
+      },
+      {
+        "tag": "input",
+        "type": "checkbox",
+
+        "checked": "true",
+        "required": "false"
+      },
+      {
+        "tag": "input",
+        "type": "radio",
+
+        "checked": "true",
+        "required": "false"
+      },
+      {
+        "tag": "input",
+        "type": "file",
+
+        "accept": "MIME_TYPE",
+        "multiple": "multiple",
+        "required": "false"
+      },
+      {
+        "tag": "input",
+        "type": "button"
+      },
+      {
+        "tag": "input",
+        "type": "image",
+
+        "alt": "imageAlt",
+        "formaction": "action",
+        "formenctype": "encodedType",
+        "formmethod": "method",
+        "formnovalidate": "novalidate",
+        "formtarget": "target",
+        "height": "100px",
+        "src": "http://www.xxx.yyy.zzz",
+        "width": "100px"
+      },
+      {
+        "tag": "input",
+        "type": "reset"
+      },
+      {
+        "tag": "input",
+        "type": "submit",
+
+        "formaction": "action",
+        "formenctype": "encodedType",
+        "formmethod": "method",
+        "formnovalidate": "novalidate",
+        "formtarget": "target"
+      }
+    ],
+  "attributes": {
+    "accept": ["audio/*","video/*","image/*","VALID_MIME_TYPE",".extension"]
+
+  }
+}

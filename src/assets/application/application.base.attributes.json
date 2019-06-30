@@ -1,0 +1,20 @@
+{
+  "tag": "input|select",
+  "type": "''|hidden|text|search|tel|url|email|password|date|time|number|range|color|checkbox|radio|file|submit|image|reset|button",
+
+  "name": "Name of form control to use for form submission and in the form.elements API",
+  "value": "Value of the form control",
+  "id": "anyId",
+
+  "accesskey": "a|A|b|B|c|C|d|D|...|",
+  "class": "classes",
+  "contenteditable": "''|true|false",
+  "dir": "ltr|rtl|auto",
+  "hidden": "hidden|''",
+  "lang": "BCP_47_Language_Tag|''",
+  "spellcheck": "''|true|false",
+  "style": "CSS Styling;",
+  "tabindex": "number",
+  "title": "some text",
+  "translate": "''|yes|no"
+}
