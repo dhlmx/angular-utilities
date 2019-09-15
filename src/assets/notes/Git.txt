@@ -163,3 +163,12 @@ Undoing Uncommitted Changes (unstaged):
 
 	New files:
 		git rm --cached
+		
+		
+
+https://github.com/dhlmx/angular-utilities.git
+
+
+
+
+ 
