@@ -1,0 +1,49 @@
+Installation:
+	Download the latest tarball from the Git website
+		tar -xjf git-YOUR-VERSION.tar.bz2
+		cd git-YOUR-VERSION
+		make
+		make install
+
+	You can compile the documentation from source as well. Replace the last two lines in the previous steps with this:
+		make all doc
+		make install install-doc
+
+	Git on Ubuntu.
+		sudo apt-get install git-core
+
+		To install the user manual, do this:
+			sudo apt-get install git-doc
+
+Configuration:
+	~/.gitconfig
+	
+	Global:
+		git config --global user.name "Your Name"
+		git config --global user.email "user@domain.com"
+
+	Set the Git user for a specific repository.
+		cd /path/to/repository
+		git config user.name "Your Name"
+		git config user.email "user@domain.com"
+	
+	Turn colors on wherever possible in the Git UI.
+		git config --global color.ui auto
+		
+	Configure Git’s editor.
+		git config --global core.editor /path/to/editor
+		
+New Repository:
+	git init
+
+	Create a repository in an existing directory, and add all files from that directory:
+		cd /path/to/some/directory
+		git init
+		git add .
+		git commit -m "some commit message"
+	
+Clone a repository:
+	git clone some-repository
+
+
+	
