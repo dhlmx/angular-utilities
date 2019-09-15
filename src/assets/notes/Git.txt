@@ -44,6 +44,55 @@ New Repository:
 	
 Clone a repository:
 	git clone some-repository
+	
+	Create a shallow clone with the last fifty commits:
+		git clone --depth 50 some-repository
+		git clone some-repository some-path
+	
+Add:
+	git add <file>
+	git add path/<file>
+	git add path/
+	git add .	
+	git add *.*
+	git add something.*
+	git add some-path/*.*
+	git add -A|--all	
+	
+	Update tracked files:
+		git add -u|--update
+	
+	Partially:
+		git add -p|--patch
+		git add -p <file>
+		git add -p path/<file>
+		
+	Editing:
+		git add -e
+		git add -e <file>
+		git add -e path/<file>
 
+Ammend:
+	git --amend		
+		
+Commit:
+	git commit -m "some message"
+	git commit -m "message 01" -m "message 02" -m "etc"
+	git commit -m "some message" -a	
+	git commit -a -C HEAD
+
+	Commit and launch editor for commit message:
+		git commit
+
+Discard changes:
+	git checkout -- <file>
+
+Status:
+	git status
+	
+Unstage:
+	git reset HEAD <file>
+	
+	
 
 	
