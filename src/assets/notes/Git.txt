@@ -86,6 +86,22 @@ Commit:
 
 Discard changes:
 	git checkout -- <file>
+	
+	
+Ignore
+	Ignore a specific file and/or path called cache:
+		Add the following to .gitignore:
+			cache
+
+	Ignore all .swp files:
+		Add the following to .gitignore:
+			*.swp
+			
+	Set up a global excludes file:
+		Your excludesfile can exist anywhere you want on your computer. The
+		following example puts it in your home directory in the .gitignore file:
+			git config --global core.excludesfile \
+			~/.gitignore
 
 Status:
 	git status
