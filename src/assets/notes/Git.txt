@@ -42,13 +42,6 @@ New Repository:
 		git add .
 		git commit -m "some commit message"
 	
-Clone a repository:
-	git clone some-repository
-	
-	Create a shallow clone with the last fifty commits:
-		git clone --depth 50 some-repository
-		git clone some-repository some-path
-	
 Add:
 	git add <file>
 	git add path/<file>
@@ -74,6 +67,14 @@ Add:
 
 Ammend:
 	git --amend		
+
+	
+Clone a repository:
+	git clone some-repository
+	
+	Create a shallow clone with the last fifty commits:
+		git clone --depth 50 some-repository
+		git clone some-repository some-path
 		
 Commit:
 	git commit -m "some message"
@@ -103,12 +104,21 @@ Ignore
 			git config --global core.excludesfile \
 			~/.gitignore
 
+Move a file or directory:
+	Move README.md to README.rst, use this:
+		git mv README.md README.rst
+		git commit -m "Changed README from Markdown to ReSTructured text"
+
 Status:
 	git status
 	
-Unstage:
-	git reset HEAD <file>
-	
-	
+Undoing Uncommitted Changes (unstaged):
+	A modified file that’s been staged:
+		git reset HEAD -- <file>
 
-	
+	All uncommitted changes to a file:
+		Warning: Doing this deletes files and cannot be undone.
+		git checkout -- <file>
+
+	New files:
+		git rm --cached
