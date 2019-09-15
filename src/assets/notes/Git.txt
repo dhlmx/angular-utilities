@@ -84,6 +84,25 @@ Commit:
 
 	Commit and launch editor for commit message:
 		git commit
+		
+Delete:
+	Delete a file:
+		git rm -- <file>
+		git commit -m "remove <file>"
+
+	Delete a directory:
+		git rm -r -- <dir>/
+		git commit -m "remove the <dir> directory"
+
+	Get a directory back after deleting it but before committing it:
+		1.- Reset
+			git reset HEAD -- <dir>/
+
+		2.- Check out the files from the repository:
+			git checkout -- <dir>/
+
+	Force a file to be removed:
+		git rm -f -- <file>
 
 Discard changes:
 	git checkout -- <file>
@@ -108,6 +127,28 @@ Move a file or directory:
 	Move README.md to README.rst, use this:
 		git mv README.md README.rst
 		git commit -m "Changed README from Markdown to ReSTructured text"
+		
+	Move a file or directory into another directory:
+		git mv README.rst docs/
+		git commit -m "Moved README into docs/ directory"
+
+Sharing changes:
+	1a.- Fetch changes from a remote repository:
+		git fetch <remote name>
+
+	1b.- Pull changes from a remote repository:
+		git pull <remote name>
+
+		Pull from a repository you cloned:
+			git pull origin
+			
+		Pull, but rebase your local changes on top of the remote change instead of merging them:
+			git pull --rebase origin <remote-branch-name>
+
+	2.- Push changes to a remote repository:
+		git push <remote name> <branch name>
+
+
 
 Status:
 	git status
