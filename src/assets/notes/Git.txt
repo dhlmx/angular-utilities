@@ -102,6 +102,11 @@ Branch:
 		Use --no-track to turn it off:
 			git branch --no-track <new-branch-name> [<starting-point>]
 			
+	Delete a branch that has been merged into the current branch:
+		git branch -d <branch-name>
+
+	Delete a branch that hasn’t been merged into the current branch:
+		git branch -D experiment
 			
 	View all local branches:
 		git branch
@@ -245,6 +250,16 @@ Sharing changes:
 Status:
 	git status
 	
+Tags:
+	List all tags:
+		git tag
+
+	Tag the latest commit as version 1.0 in the current branch:
+		git tag v1.0
+
+	Create a tag called beta1 from the next to last commit:
+		git tag beta1 HEAD^
+
 
 Undoing Uncommitted Changes (unstaged):
 	A modified file that’s been staged:
