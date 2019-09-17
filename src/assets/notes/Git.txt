@@ -230,6 +230,28 @@ Rebase:
 		--hard can be dangerous.
 		
 
+Remotes repositories:
+	Add a new remote repository:
+		git remote add <name> <repository-url>
+
+		Example:
+			git remote add tswicegood\ git://github.com/tswicegood/bobby-tables.git
+
+	Remove a remote repository:
+		git remote rm <name>
+
+		Example:
+			git remote rm tswicegood
+			
+	Make the master branch a tracking branch:
+		git checkout origin/master
+
+	You are in 'detached HEAD' state:
+		git checkout -b <new-branch-name>
+		git branch -d master
+		git checkout -b master
+		
+
 Sharing changes:
 	1a.- Fetch changes from a remote repository:
 		git fetch <remote-repository-name>
