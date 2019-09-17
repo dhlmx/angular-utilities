@@ -15,6 +15,7 @@ Installation:
 		To install the user manual, do this:
 			sudo apt-get install git-doc
 
+
 Configuration:
 	~/.gitconfig
 	
@@ -32,6 +33,7 @@ Configuration:
 		
 	Configure Git’s editor.
 		git config --global core.editor /path/to/editor
+
 		
 New Repository:
 	git init
@@ -41,6 +43,7 @@ New Repository:
 		git init
 		git add .
 		git commit -m "some commit message"
+
 	
 Add:
 	git add <file>
@@ -65,10 +68,58 @@ Add:
 		git add -e <file>
 		git add -e path/<file>
 
-Ammend:
-	git --amend		
 
-	
+Ammend:
+	git --amend
+
+
+Branch:
+	Create a new branch from current place in the repository:
+		git branch <new-branch-name>
+
+	Create a new branch from another branch, tag, or commit:
+		git branch <new-branch-name> <starting-point>
+		
+		Example:
+			git branch newer 99a0de8
+
+	Check out a different branch, tag, and so on:
+		git checkout <branch>
+		
+		Example:
+			git checkout newer
+
+	Create a branch and check it out at the same time:
+		git checkout -b <new-branch-name> [<starting-point>]
+
+		Example:
+			git checkout -b newest 64648c9
+
+	Create a branch with or without tracking:
+		Using a remote branch as your <starting point implies that --track is on:
+			git branch --track <new-branch-name> [<starting-point>]
+
+		Use --no-track to turn it off:
+			git branch --no-track <new-branch-name> [<starting-point>]
+			
+			
+	View all local branches:
+		git branch
+
+	View all remote branches:
+		git branch -r
+
+	View all branches.
+		git branch -a
+
+	View all that are or are not merged into the current branch:
+		git branch --merged
+		git branch --no-merged
+
+	View all branches that contain a particular commit.
+		git branch --contains <commit-id>
+
+
 Clone a repository:
 	git clone some-repository
 	
@@ -76,6 +127,7 @@ Clone a repository:
 		git clone --depth 50 some-repository
 		git clone some-repository some-path
 		
+
 Commit:
 	git commit -m "some message"
 	git commit -m "message 01" -m "message 02" -m "etc"
@@ -85,6 +137,7 @@ Commit:
 	Commit and launch editor for commit message:
 		git commit
 		
+
 Delete:
 	Delete a file:
 		git rm -- <file>
@@ -104,11 +157,12 @@ Delete:
 	Force a file to be removed:
 		git rm -f -- <file>
 
+
 Discard changes:
 	git checkout -- <file>
 	
 	
-Ignore
+Ignore:
 	Ignore a specific file and/or path called cache:
 		Add the following to .gitignore:
 			cache
@@ -123,6 +177,29 @@ Ignore
 			git config --global core.excludesfile \
 			~/.gitignore
 
+
+Merge:
+	Merge changes from development to the master branch:
+		git checkout master
+		git merge development
+		
+	Merge changes, but don’t commit:
+		git merge --no-commit development
+
+	Force the creation of a merge commit:
+		git merge --no-ff development
+
+	Add a one-line log message from each merged commit to the merge message:
+		git merge --log development
+
+	Specify a custom log message for a merge commit, if created:
+		git merge -m "some message" development
+		
+	You can use git commit --amend to modify the commit message after the fact too:
+		git merge --log --no-ff development
+		git commit --amend -c HEAD
+
+
 Move a file or directory:
 	Move README.md to README.rst, use this:
 		git mv README.md README.rst
@@ -132,12 +209,28 @@ Move a file or directory:
 		git mv README.rst docs/
 		git commit -m "Moved README into docs/ directory"
 
+
+Rebase:
+	Rebase your current branch against another:
+		Rebase your current branch against master:
+			git rebase master
+
+	Rebase against a tag or commit ID:
+		git rebase af0fe21
+
+	Undo a rebase after it completes:
+		git reset --hard ORIG_HEAD
+		HEAD is now at e9f9fdc update the README
+
+		--hard can be dangerous.
+		
+
 Sharing changes:
 	1a.- Fetch changes from a remote repository:
-		git fetch <remote name>
+		git fetch <remote-repository-name>
 
 	1b.- Pull changes from a remote repository:
-		git pull <remote name>
+		git pull <remote-repository-name>
 
 		Pull from a repository you cloned:
 			git pull origin
@@ -146,13 +239,13 @@ Sharing changes:
 			git pull --rebase origin <remote-branch-name>
 
 	2.- Push changes to a remote repository:
-		git push <remote name> <branch name>
-
+		git push <remote-repository-name> <branch-name>
 
 
 Status:
 	git status
 	
+
 Undoing Uncommitted Changes (unstaged):
 	A modified file that’s been staged:
 		git reset HEAD -- <file>
@@ -165,10 +258,4 @@ Undoing Uncommitted Changes (unstaged):
 		git rm --cached
 		
 		
-
 https://github.com/dhlmx/angular-utilities.git
-
-
-
-
- 
