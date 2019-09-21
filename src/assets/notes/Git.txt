@@ -237,6 +237,25 @@ Remotes repositories:
 		Example:
 			git remote add tswicegood\ git://github.com/tswicegood/bobby-tables.git
 
+	Fetch changes from remote repository:
+		git fetch <remote-repository-name>
+	
+		Example:
+			git fetch tswicegood
+
+	Fetch a specific branch:
+		git fetch remote \
+			<local-branch-name>:remotes/remote/<remote-branch-name>
+			
+		Example:
+			git fetch origin master:remotes/origin/master
+			
+	Fetch changes from multiple remote repositories:
+		git fetch --multiple remote1 remote2 ...
+
+	Fetch changes from all remote repositories:
+		git fetch --all
+
 	Remove a remote repository:
 		git remote rm <name>
 
@@ -250,7 +269,23 @@ Remotes repositories:
 		git checkout -b <new-branch-name>
 		git branch -d master
 		git checkout -b master
+
+	Pull changes from a remote repository:
+		git pull [<remote-repository-name> [<remote-branch-name>]]
 		
+		Example:
+			git pull tswicegood master
+
+	Pull changes from a different branch into your local branch:
+		git pull origin <remote-branch-name>:<local-branch-name>
+
+		Example:
+			git pull origin development:team-dev
+
+	Pull changes and rebase instead of merge:
+		To fetch from origin and rebase against its main branch, use this:
+			git pull --rebase origin master
+
 
 Sharing changes:
 	1a.- Fetch changes from a remote repository:
